@@ -1,43 +1,43 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
- * Plugin URI: https://breakdance.com/
- * Description: Boilerplate plugin to save your custom elements created with Element Studio.
- * Author: Breakdance
- * Author URI: https://breakdance.com/
+ * Plugin Name: Louis Custom Elements
+ * Plugin URI: https://louisreingold.com/
+ * Description: Example description.
+ * Author: Louis
+ * Author URI: https://louisreingold.com/
  * License: GPLv2
  * Text Domain: breakdance
  * Domain Path: /languages/
  * Version: 0.0.1
  */
 
-namespace BreakdanceCustomElements;
+namespace LouisCustomElements;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action('breakdance_loaded', function () {
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/elements',
-        'BreakdanceCustomElements',
+        'LouisCustomElements',
         'element',
-        'Custom Elements',
+        'Louis Custom Elements',
         false
     );
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/macros',
-        'BreakdanceCustomElements',
+        'LouisCustomElements',
         'macro',
-        'Custom Macros',
+        'Louis Custom Macros',
         false,
     );
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/presets',
-        'BreakdanceCustomElements',
+        'LouisCustomElements',
         'preset',
-        'Custom Presets',
+        'Louis Custom Presets',
         false,
     );
 },
